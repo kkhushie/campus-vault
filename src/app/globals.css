@@ -1,1 +1,14 @@
 @import "tailwindcss";
+
+:root {
+    --font-raleway: "Raleway", sans-serif;
+    --font-bricolage: "Bricolage Grotesque", sans-serif;
+  }
+  
+  body {
+    font-family: var(--font-raleway);
+  }
+  h1{
+    font-family: var(--font-bricolage);
+
+  }
