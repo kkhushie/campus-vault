@@ -24,10 +24,10 @@ export default function Navbar() {
           {/* Right side */}
           <div className="flex items-center gap-4">
             <Link
-              href="/auth"
+              href="/marketplace/sell"
               className="text-sm text-white/60 hover:text-white transition-colors duration-200"
             >
-              Authentication
+              Marketplace
             </Link>
 
             {session ? (
@@ -48,7 +48,7 @@ export default function Navbar() {
             ) : (
               <button
                 onClick={() => signIn("google")}
-                className="px-6 py-2 rounded-xl bg-white text-black hover:bg-gray-100 transition-all duration-300 font-semibold text-sm shadow-lg shadow-white/10"
+                className="px-6 py-2 rounded-xl cursor-pointer bg-white text-black hover:bg-gray-100 transition-all duration-300 font-semibold text-sm shadow-lg shadow-white/10"
               >
                 Login
               </button>
